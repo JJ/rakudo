@@ -133,7 +133,7 @@ installation of distributions (a `CompUnit::Repository::Installation`). Any
 `PROCESS::<$REPO>` to instead point to a chain of repositories that ends with
 the default `CompUnit::Repository::Installation` that is normally there.
 
-A `use lib` installs a lexical `$*REPO` which takes precedence over that in
+A `use lib` installs a lexical `$?REPO` which takes precedence over that in
 `PROCESS`. Note that for Perl 6.christmas, we will only support the use of
 `use lib` in scripts, not in modules, as its interaction with precompilation
 is more complex than we have time to reasonably consider (and it's better to
